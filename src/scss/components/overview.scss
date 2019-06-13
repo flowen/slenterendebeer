@@ -1,0 +1,26 @@
+.overview {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+
+    .overview__article:nth-child(odd) {
+      text-align: right;
+    }
+  }
+
+  &__article {
+    margin: 5rem 0;
+  }
+
+  &__time {
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__link {
+  }
+}

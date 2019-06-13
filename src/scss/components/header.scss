@@ -1,0 +1,12 @@
+.header {
+  &__title {
+    margin: 2rem auto;
+    text-align: center;
+
+    $min_width: 320px;
+    $max_width: 1200px;
+    $min_font: 30px;
+    $max_font: 120px;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  }
+}

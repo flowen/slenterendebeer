@@ -1,0 +1,89 @@
+/**
+ * Hide content
+ * {@link https://developer.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/}
+ */
+*[hidden] {
+  display: none !important;
+}
+
+/**
+ * Inheriting box sizing
+ * {@link https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/}
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: $color-off-white;
+  color: $color-primary;
+  font-family: $primary-font;
+}
+
+/**
+ * Make the image auto resize to the max width of the boundary
+ */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:not(.anchor, .cta__anchor):hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &[aria-current='page'],
+  &[aria-current='page']:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  @include button-reset;
+}
+
+nav {
+  ul,
+  ol {
+    @extend %list-reset;
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+section {
+  position: relative;
+}
