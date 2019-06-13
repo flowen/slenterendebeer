@@ -2,9 +2,12 @@ import React, { Suspense, useRef, useState, useMemo, useCallback } from 'react'
 import { Canvas, useThree, useRender, extend, Vector3 } from 'react-three-fiber'
 import { useSpring } from 'react-spring'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import modelPath from '../assets/gltf/15205_Over_sized_Prize_Bear_v1.gltf'
+
+import modelPath from '../../static/gltf/bear.gltf'
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 // extend({ OrbitControls })
+
+// const modelPath = require('../../static/gltf/bear.gltf')
 
 function Model({ file }) {
   const [obj, set] = useState()
