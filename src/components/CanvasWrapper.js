@@ -3,11 +3,7 @@ import { Canvas, useThree, useRender, extend, Vector3 } from 'react-three-fiber'
 import { useSpring } from 'react-spring'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
-import modelPath from '../../static/gltf/bear.gltf'
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-// extend({ OrbitControls })
-
-// const modelPath = require('../../static/gltf/bear.gltf')
+import modelPath from '../assets/gltf/bear_v1.gltf'
 
 function Model({ file }) {
   const [obj, set] = useState()

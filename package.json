@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vxna/gltf-loader": "^1.0.3",
     "autoprefixer": "^9.6.0",
     "css-mqpacker": "^7.0.0",
     "gatsby": "^2.1.10",
@@ -25,7 +26,6 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.15",
-    "gltf-webpack-loader": "^1.0.6",
     "intersection-observer": "^0.7.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.2",

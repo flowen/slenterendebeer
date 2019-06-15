@@ -922,6 +922,15 @@
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
   integrity sha1-DTyzECL4Qn6ljACK8yuA2hJspOM=
 
+"@vxna/gltf-loader@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@vxna/gltf-loader/-/gltf-loader-1.0.3.tgz#378b7743b047871b8286a1f0a572708db1300ea2"
+  integrity sha512-pWXG5rrndVvJJZSh8uiHOt5EST70zl7hboc33AYMIs7WQT2XaT7LYJtuwCEkKEA84E9Rq0I7ytAAH0kcysJ5+A==
+  dependencies:
+    common-tags "^1.8.0"
+    loader-utils "^1.2.3"
+    neo-async "^2.6.0"
+
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"
@@ -2508,7 +2517,7 @@ commander@~2.8.1:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-common-tags@^1.4.0:
+common-tags@^1.4.0, common-tags@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
@@ -5191,14 +5200,6 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
-gltf-webpack-loader@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/gltf-webpack-loader/-/gltf-webpack-loader-1.0.6.tgz#94a01a21894ef9a5438f2f79f664157c664ce9ce"
-  integrity sha512-0U5IqtRoXpkBF29uEokhTDvG8E82CzyOpHKyYoCL3Rf09sYxe8iyxYuDlSBmiuuLLIljCUt2ckSb3V3ARXqrUw==
-  dependencies:
-    loader-utils "^1.2.3"
-    schema-utils "^1.0.0"
-
 got@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/got/-/got-8.0.0.tgz#57a11f841edc58e3f3eba4b3ac220faf5133770f"
@@ -7379,7 +7380,7 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-neo-async@^2.5.0:
+neo-async@^2.5.0, neo-async@^2.6.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
